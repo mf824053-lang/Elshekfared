@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الشيخ فريد للغسل الشرعي</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#1a4d2e">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: 'Amiri', 'Traditional Arabic', serif;
+    font-size: 18px;
+    background: #fff;
+    color: #222;
+    padding-bottom: 70px;
+}
+.page {
+    min-height: 100vh;
+    padding: 20px 15px;
+    display: none;
+}
+.page.active { display: block; }
+
+h1, h2 {
+    text-align: center;
+    color: #1a4d2e;
+    margin-bottom: 15px;
+}
+h2 {
+    font-size: 24px;
+    border-bottom: 3px solid #1a4d2e;
+    padding-bottom: 10px;
+}
+h3 {
+    color: #1a4d2e;
+    font-size: 20px;
+    margin: 20px 0 10px;
+    text-align: right;
+}
+
+.step-card {
+    background: #f5f5f5;
+    padding: 15px;
+    margin: 12px 0;
+    border-radius: 12px;
+    text-align: right;
+    line-height: 1.8;
+}
+
+.quran {
+    background: #f5f3f0;
+    padding: 12px;
+    border-right: 4px solid #1a4d2e;
+    margin: 15px 0;
+    font-size: 20px;
+    text-align: center;
+}
+.hadith {
+    background: #eef7f1;
+    padding: 12px;
+    border-right: 4px solid #2d8f4a;
+    margin: 15px 0;
+    font-size: 18px;
+}
+.note {
+    background: #fff8e1;
+    padding: 12px;
+    border-right: 4px solid #ff9800;
+    margin: 15px 0;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.img-box {
+    text-align: center;
+    margin: 20px 0;
+}
+.img-box img {
+    width: 100%;
+    max-width: 350px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid #ddd;
+}
+.img-caption {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #1a4d2e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+}
+.nav button {
+    background: #fff;
+    border: none;
+    color: #1a4d2e;
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+.nav button:disabled { opacity: 0.4; }
+.nav span {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<div id="pages">
+
+<!-- صفحة 1: الغلاف -->
+<div class="page active">
+    <h1>الشيخ فريد للغسل الشرعي</h1>
+    <div class="img-box">
+        <img src="icon.png" alt="الشيخ فريد" style="max-width:200px; height:200px; border-radius:50%; border:4px solid #1a4d2e;">
+    </div>
+    <h3 style="text-align:center;">دليل مفصل في تغسيل وتكفين الميت</h3>
+    <p style="text-align:center;margin-top:40px;font-size:18px;">
+        وفق المذهب الحنفي<br>
+        الطبعة الأولى 2026
+    </p>
+    <div class="page-num">صفحة 1</div>
+</div>
+
+<!-- صفحة 2: حكم الغسل -->
+<div class="page">
+    <h2>حكم تغسيل الميت</h2>
+    <div class="step-card">
+        تغسيل الميت المسلم فرض كفاية عند الحنفية.
+        إذا قام به من يكفي سقط الإثم عن الباقين،
+        وإذا تركه الجميع أثموا جميعاً.
+    </div>
+    <div class="quran">﴿كُلُّ نَفْسٍ ذَائِقَةُ الْمَوْتِ﴾ [آل عمران: 185]</div>
+    <div class="hadith">
+        قال النبي ﷺ: "اغسلنها ثلاثاً أو خمساً أو أكثر من ذلك إن رأيتن ذلك بماء وسدر"
+        رواه البخاري ومسلم
+    </div>
+    <div class="note">
+        <strong>تنبيه حنفي:</strong> الشهيد في معركة مع الكفار لا يُغسل ولا يُصلى عليه،
+        بل يُدفن بثيابه التي مات فيها.
+    </div>
+    <div class="page-num">صفحة 2</div>
+</div>
+
+<!-- صفحة 3: التجهيز -->
+<div class="page">
+    <h2>التجهيز قبل الغسل</h2>
+    <div class="step-card">
+        1. يوضع الميت على مكان مرتفع مستوي طاهر، بعيد عن أعين الناس،
+        ويُستحب أن يكون في غرفة مغلقة.
+    </div>
+    <div class="step-card">
+        2. يستر ما بين السرة والركبة بخرقة سميكة، ولا تكشف العورة إلا للحاجة.
+    </div>
+    <div class="step-card">
+        3. تجهز الأدوات: ماء طهور، سدر أو صابون، كافور، قطن، خرق نظيفة، قفازات،
+        وعطر لتبخير الكفن.
+    </div>
+    <div class="note">
+        عند الحنفية: يُستحب أن يكون الغاسل أميناً عارفاً بأحكام الغسل،
+        ويُقدم الأقرب فالأقرب من الأقارب.
+    </div>
+    <div class="page-num">صفحة 3</div>
+</div>
+
+<!-- صفحة 4: التنظيف الأولي -->
+<div class="page">
+    <h2>التنظيف الأولي</h2>
+    <div class="img-box">
+        <img src="https://i.ibb.co/4ZQk3xJ/ghosl-prep.jpg" alt="تجهيز الميت">
+        <div class="img-caption">وضع الميت على المغتسل وستر العورة</div>
+    </div>
+    <div class="step-card">
+        1. يجرد الميت من ثيابه برفق مع مراعاة ستر العورة،
+        ويُستحب أن يكون التجريد تحت الغطاء.
+    </div>
+    <div class="step-card">
+        2. يرفع رأس الميت قليلاً ويعصر بطنه برفق لإخراج ما فيه من فضلات،
+        مع مراعاة الرفق وعدم العنف.
+    </div>
+    <div class="step-card">
+        3. يلف الغاسل على يده خرقة مبللة وينظف المخرجين الأمامي والخلفي جيداً،
+        ويُزال ما على الأسنان والأنف من أذى.
+    </div>
+    <div class="step-card">
+        4. يغسل يدي الميت ثلاثاً، ثم يتمضمض وينظف أنفه بخرقة مبللة
+        دون إدخال الماء في الفم والأنف.
+    </div>
+    <div class="page-num">صفحة 4</div>
+</div>
+
+<!-- صفحة 5: الغسل الأساسي -->
+<div class="page">
+    <h2>الغسل الأساسي على المذهب الحنفي</h2>
+    <div class="img-box">
+        <img src="https://i.ibb.co/7J9bQvQ/ghosl-wash.jpg" alt="غسل الميت">
+        <div class="img-caption">غسل الجسد بالماء والسدر</div>
+    </div>
+    <div class="step-card">
+        1. يغسل رأس الميت ولحيته بماء وسدر، ويُمشط شعره برفق إن احتاج.
+    </div>
+    <div class="step-card">
+        2. يبدأ بالشق الأيمن من الجسد فيغسله من الأعلى إلى الأسفل،
+        ثم الشق الأيسر. يُراعى الترتيب عند الحنفية.
+    </div>
+    <div class="step-card">
+        3. يُغسل الميت وتراً: ثلاث مرات أو خمس أو سبع،
+        حسب ما يقتضيه التنظيف. الواجب مرة واحدة والباقي سنة.
+    </div>
+    <div class="step-card">
+        4. في الغسلة الأخيرة يُستحب وضع الكافور في الماء لطيب الرائحة،
+        ويُمسح بدن الميت بقطعة قطن مبللة بالطيب.
+    </div>
+    <div class="note">
+        عند الحنفية: لا يُنقض شعر المرأة، بل يُغسل كما هو ويُترك مرسلاً.
+    </div>
+    <div class="page-num">صفحة 5</div>
+</div>
+
+<!-- صفحة 6: أحكام الكفن -->
+<div class="page">
+    <h2>أحكام الكفن عند الحنفية</h2>
+    <div class="step-card">
+        <strong>أقل الكفن:</strong> ثوب واحد ساتر لجميع البدن، وهذا يجزي عند الضرورة.
+    </div>
+    <div class="step-card">
+        <strong>أكمل كفن الرجل:</strong> ثلاثة أثواب بيض: إزار ولفافة وقميص،
+        وليس فيها عمامة.
+    </div>
+    <div class="step-card">
+        <strong>أكمل كفن المرأة:</strong> خمسة أثواب: إزار، وخمار، وقميص، ولفافتان.
+    </div>
+    <div class="step-card">
+        يُستحب أن يكون الكفن أبيض، نظيفاً، من جنس ما كان يلبسه الميت في حياته.
+    </div>
+    <div class="quran">﴿وَلِبَاسُ التَّقْوَىٰ ذَٰلِكَ خَيْرٌ﴾ [الأعراف: 26]</div>
+    <div class="page-num">صفحة 6</div>
+</div>
+
+<!-- صفحة 7: التكفين -->
+<div class="page">
+    <h2>كيفية التكفين</h2>
+    <div class="img-box">
+        <img src="https://i.servimg.com/u/f57/14/57/85/46/unt6it10.jpg"
+             alt="توضيح طريقة التكفين">
+        <div class="img-caption">توضيح طريقة لف الميت بالكفن</div>
+    </div>
+    <div class="step-card">
+        1. تبسط الأكفان بعضها فوق بعض على المغتسل،
+        ويُبخر الكفن بالبخور قبل وضع الميت.
+    </div>
+    <div class="step-card">
+        2. يوضع الميت مستلقياً على ظهره فوق الأكفان،
+        ويُوضع شيء من القطن بين الإليتين.
+    </div>
+    <div class="step-card">
+        3. يرد طرف الكفن الأيمن على الشق الأيسر للميت.
+    </div>
+    <div class="step-card">
+        4. يرد الطرف الأيسر على الشق الأيمن.
+    </div>
+    <div class="step-card">
+        5. تعقد العقد على الكفن من عند الرأس والوسط والرجلين،
+        وتُحل هذه العقد عند وضع الميت في القبر.
+    </div>
+    <div class="page-num">صفحة 7</div>
+</div>
+
+<!-- صفحة 8: آداب ومحاذير -->
+<div class="page">
+    <h2>آداب ومحاذير</h2>
+    <h3>آداب يجب مراعاتها</h3>
+    <div class="step-card">• الإسراع في تجهيز الميت ودفنه، فهذا من السنة.</div>
+    <div class="step-card">• ستر الميت وصيانة عورته، وغض البصر عنها.</div>
+    <div class="step-card">• كتم ما قد يظهر من الميت من عيوب أو تغير.</div>
+    <div class="step-card">• الرفق بالميت أثناء التغسيل وعدم إيذائه.</div>
+    <div class="step-card">• الدعاء للميت أثناء التجهيز والاستغفار له.</div>
+
+    <h3>أخطاء يجب تجنبها</h3>
+    <div class="step-card">• المبالغة في استعمال الطيب والكافور.</div>
+    <div class="step-card">• كتابة آيات القرآن على الكفن.</div>
+    <div class="step-card">• تصوير الميت أثناء الغسل أو التكفين.</div>
+    <div class="page-num">صفحة 8</div>
+</div>
+
+<!-- صفحة 9: الأدعية -->
+<div class="page">
+    <h2>10 أدعية للميت</h2>
+    <div class="step-card">1. اللهم اغفر له وارحمه، وعافه واعف عنه، وأكرم نزله، ووسع مدخله.</div>
+    <div class="step-card">2. اللهم اجعل قبره روضة من رياض الجنة، ولا تجعله حفرة من حفر النار.</div>
+    <div class="step-card">3. اللهم نقه من الذنوب والخطايا كما ينقى الثوب الأبيض من الدنس.</div>
+    <div class="step-card">4. اللهم أبدله داراً خيراً من داره، وأهلاً خيراً من أهله.</div>
+    <div class="step-card">5. اللهم ثبته عند السؤال، ويسر حسابه، ويمّن كتابه.</div>
+    <div class="step-card">6. اللهم اجعله في الفردوس الأعلى مع النبيين والصديقين والشهداء.</div>
+    <div class="step-card">7. اللهم اغسله بالماء والثلج والبرد.</div>
+    <div class="step-card">8. اللهم افسح له في قبره مد بصره.</div>
+    <div class="step-card">9. اللهم اجعل عمله الصالح أنيساً له في قبره.</div>
+    <div class="step-card">10. اللهم ارحم موتانا وموتى المسلمين، واجمعنا بهم في جنات النعيم.</div>
+    <div class="page-num">صفحة 9</div>
+</div>
+
+<!-- صفحة 10: الصلاة على الجنازة -->
+<div class="page">
+    <h2>كيفية صلاة الجنازة على المذهب الحنفي</h2>
+
+    <h3>شروط صحة الصلاة</h3>
+    <div class="step-card">
+        1. طهارة المصلي والميت والمكان والثوب.<br>
+        2. ستر العورة واستقبال القبلة.<br>
+        3. وضع الجنازة أمام الإمام.<br>
+        4. النية: نية الصلاة على الميت.
+    </div>
+
+    <h3>صفة الصلاة</h3>
+    <div class="step-card">
+        <strong>التكبيرة الأولى:</strong> يكبر الإمام والمأمومون، ثم يقرأ الفاتحة سراً.
+    </div>
+    <div class="step-card">
+        <strong>التكبيرة الثانية:</strong> يكبر ثم يصلي على النبي ﷺ بالصلاة الإبراهيمية.
+    </div>
+    <div class="step-card">
+        <strong>التكبيرة الثالثة:</strong> يكبر ثم يدعو للميت بالأدعية المأثورة.
+    </div>
+    <div class="step-card">
+        <strong>التكبيرة الرابعة:</strong> يكبر ثم يسلم تسليمة واحدة عن يمينه.
+    </div>
+
+    <div class="hadith">
+        قال ﷺ: "صلوا على صاحبكم" متفق عليه
+    </div>
+
+    <h3>دعاء الجنازة عند الحنفية</h3>
+    <div class="step-card">
+        "اللهم اغفر لحينا وميتنا، وشاهدنا وغائبنا، وصغيرنا وكبيرنا،
+        وذكرنا وأنثانا. اللهم من أحيته منا فأحيه على الإسلام،
+        ومن توفيته منا فتوفه على الإيمان"
+    </div>
+    <div class="page-num">صفحة 10</div>
+</div>
+
+<!-- صفحة 11: الخاتمة -->
+<div class="page">
+    <h2>الخاتمة</h2>
+    <div class="quran">
+        ﴿وَتَعَاوَنُوا عَلَى الْبِرِّ وَالتَّقْوَىٰ وَلَا تَعَاوَنُوا عَلَى الْإِثْمِ وَالْعُدْوَانِ﴾
+        [المائدة: 2]
+    </div>
+    <p style="text-align:center;margin-top:40px;font-size:18px;">
+        هذا مختصر في أحكام التغسيل والتكفين والصلاة على الميت
+        وفق المذهب الحنفي، نسأل الله أن ينفع به.
+    </p>
+    <p style="text-align:center;margin-top:30px;">
+        <strong>الشيخ فريد للغسل الشرعي</strong><br>
+        2026
+    </p>
+    <div class="page-num">صفحة 11</div>
+</div>
+
+</div>
+
+<div class="nav">
+    <button id="prevBtn" onclick="prevPage()">السابق</button>
+    <span id="counter">1 / 11</span>
+    <button id="nextBtn" onclick="nextPage()">التالي</button>
+</div>
+
+<script>
+let currentPage = 0;
+const totalPages = 11;
+const pages = document.querySelectorAll('.page');
+
+function showPage(n) {
+    pages.forEach(p => p.classList.remove('active'));
+    pages[n].classList.add('active');
+    document.getElementById('counter').textContent = (n+1) + ' / ' + totalPages;
+    document.getElementById('prevBtn').disabled = n === 0;
+    document.getElementById('nextBtn').disabled = n === totalPages - 1;
+    window.scrollTo(0,0);
+}
+
+function nextPage() {
+    if(currentPage < totalPages - 1) {
+        currentPage++;
+        showPage(currentPage);
+    }
+}
+
+function prevPage() {
+    if(currentPage > 0) {
+        currentPage--;
+        showPage(currentPage);
+    }
+}
+
+if('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js');
+}
+</script>
+</body>
+</html>
